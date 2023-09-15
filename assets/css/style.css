@@ -2,3 +2,15 @@
     margin: 0%;
     padding: 0%;
 }
+header{
+    background-color: rgb(40, 133, 177);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+footer{
+    background-color:white;
+    color: slategray;
+    padding: 30px;
+    text-align: center;
+}
