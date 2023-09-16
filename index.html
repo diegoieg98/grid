@@ -6,32 +6,52 @@
     <title>Document</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div>
+    <div class="grid-container">
         <header class="nav">
-            <h3>My Ecommerce</h3>
+            <h2>My Ecommerce</h2>
         </header>
         <main>
-            <div>
-                <h4> Categorias </h4>
-                <h6> Perfumes <p> (13) </p></h6>
-                <h6> Ropa <p> (21) </p></h6>
-                <h6> Accesorios <p> (41) </p></h6>
-                <h6> Zapatos <p> (10) </p></h6>
+            <div class="aside-bar">
+                <h2> Categorias </h2>
+                <div class="lateral">
+                    <h4> Perfumes </h4>
+                    <p> (13) </p>
+                </div>
+                <div class="lateral">
+                    <h4> Ropa </h4>
+                    <p> (21) </p>
+                </div>
+                <div class="lateral">
+                    <h4> Accesorios </h4>
+                    <p> (41) </p>
+                </div>
+                <div class="lateral">
+                    <h4> Zapatos </h4>
+                    <p> (10) </p>
+                </div>
             </div>
-            <div>
+        </main>
+        <section>
+            <div class="cards">
                 <div class="card">
-                    <img src="./assets/img/mykingdom.png" alt="">
-                    <h2>Perfume myKingdom</h2>
-                    <p>$34.990</p>
-                    <button>Comprar</button>
+                    <div>
+                        <img src="./assets/img/mykingdom.png" alt="">
+                        <h2>Perfume myKingdom</h2>
+                        <p>$34.990</p>
+                        <button>Comprar</button>
+                    </div>
                 </div>
                 <div class="card">
-                    <img src="./assets/img/phantom.png" alt="">
-                    <h2>Perfume Phantom</h2>
-                    <p>$69.990</p>
-                    <button>Comprar</button>
+                    <div>
+                        <img src="./assets/img/phantom.png" alt="">
+                        <h2>Perfume Phantom</h2>
+                        <p>$69.990</p>
+                        <button>Comprar</button>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./assets/img/zapato.png" alt="">
@@ -46,7 +66,7 @@
                     <button>Comprar</button>
                 </div>
             </div>
-        </main>
+        </section>
         <footer>
             <p>@Miecommerce</p>
         </footer>

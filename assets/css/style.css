@@ -1,16 +1,89 @@
+/* General */
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
 }
+p{
+    font-weight: 300;
+    padding-left: 10px;
+    color: gray;
+}
+/* Header */
 header{
+    grid-area: header;
     background-color: rgb(40, 133, 177);
     color: white;
     text-align: center;
     padding: 30px;
 }
+/* Contenido */
+main{
+    grid-area: main;
+    background-color: lightgrey;
+    text-align: center;
+}
+/* Menu */
+.aside-bar{
+    padding: 10px;
+    min-height: 100vh;
+}
+.lateral{
+    display: flex;
+    padding: 10px;
+}
+.lateral p{
+    font-weight: 100;
+    font-size: 15px;
+}
+/* Catalogo */
+section{
+    grid-area: section;
+    background-color: lightgrey;
+    color: white;
+}
+.cards{
+    display: flex;
+    padding-top: 30px;
+}
+.card{
+    background-color: white;
+    color: black;
+    width: 350px;
+    text-align: center;
+    padding-top: 20px;
+}
+.card img{
+    width: 90%;
+    height: 300px;
+}
+button{
+    background-color: cornflowerblue;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+/* Footer */
 footer{
+    grid-area: footer;
     background-color:white;
-    color: slategray;
+    color: gray;
     padding: 30px;
     text-align: center;
+}
+/* Grid */
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main section section"
+    "footer footer footer";
+    grid-template-columns: 20% 1fr 1fr;
+}
+.grid-container .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    gap: 30px;
 }
